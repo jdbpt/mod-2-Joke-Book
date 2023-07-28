@@ -29,18 +29,16 @@ const Joke = (props) => {
       };//end handleOnClick
 
   return (
-    <div className="gen-joke">
+    <div className={"gen-joke joke" + props.id}>
 
         {showPrompt &&  
         ( 
         <div>
             <h2>{props.prompt}</h2>
-            
-            <ul>
-                <li><button onClick={()=>(handleOnClick('btn1'))}>{props.option1}</button></li>
-                <li><button onClick={()=>(handleOnClick('btn2'))}>{props.option2}</button></li>
+                <button onClick={()=>(handleOnClick('btn1'))}>{props.option1}</button>
+                <button className="btn2" onClick={()=>(handleOnClick('btn2'))}>{props.option2}</button>
                 {/**Made it so that here there is a ()=> to avoid the too many rerenders error */}
-            </ul>
+            
         </div>
         )}
 
@@ -50,7 +48,6 @@ const Joke = (props) => {
             <h2>{props.resp1}</h2>
             <button onClick={()=>(handleOnClick('reset'))}>Reset</button>
           </div>
-
         )}
 
         {!showPrompt && showWhichResp === 2 && (
@@ -58,12 +55,10 @@ const Joke = (props) => {
              <h2>{props.resp2}</h2>
              <button onClick={()=>(handleOnClick('reset'))}>Reset</button>
           </div>
-            
-
         )}
 
   </div>
   );
-};
+};//end Joke
 
 export default Joke;

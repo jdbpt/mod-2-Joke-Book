@@ -10,6 +10,18 @@
   text-align: center;
 }
 
+.joke0{
+  background-color: blue;
+}
+
+.joke2{
+  background-color: yellow;
+}
+
+.btn2{
+  margin-left: 10px;
+}
+
 ul{
   list-style-type: none;
 }
