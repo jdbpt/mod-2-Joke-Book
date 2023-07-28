@@ -60,6 +60,7 @@ function JokeBook() {
       {jokes.map((item)=>(
       <Joke
        //get rid of id= is not needed at this time**********
+        id={item.id}
         key={item.id}
         prompt={item.prompt}
         option1={item.option1}
