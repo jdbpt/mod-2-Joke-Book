@@ -1,25 +1,78 @@
-import logo from './logo.svg';
+import React from 'react';//remove useState from here as it is no longer used**************************
 import './App.css';
+import Header from './components/Header';
+import Joke from './components/Joke';
 
 function App() {
+
+  const jokes = [
+    {
+      prompt: "Do you think electric bills are expensive?",
+      option1: "Yes",
+      option2: "No",
+      resp1: "you should see chimneys, they’re through the roof",
+      resp2: "Shocking",
+      id: 0
+    },
+
+    {
+      prompt: "Why did Cinderella get kicked off the baseball team?",
+      option1: "Option A",
+      option2: "Option B",
+      resp1: "she kept running away from the ball",
+      resp2: "she wondered why the baseball kept getting bigger…then it hit her",
+      id: 1
+
+    },
+    {
+      prompt: "Which word do you want the German translation of?",
+      option1: "Constipation",
+      option2: "Bra",
+      resp1: "farfrompoopin",
+      resp2: "stopemfromflopin",
+      id: 2
+
+    },
+    {
+      prompt: "Which teacher did the biology teacher chose to go out with?",
+      option1: "Geology",
+      option2: "Physics",
+      resp1: "nope, geology rocks but geography is where it’s at.",
+      resp2: "not him, there was no chemistry",
+      id: 3
+
+    },
+    {
+      prompt: "Guess who I saw today?",
+      option1: "Option A",
+      option2: "Option B",
+      resp1: "everyone I looked at, don’t like my joke? Too bad, that’s how eye roll",
+      resp2: 'the master and his pupil. What, are my jokes too "cornea" for you?',
+      id: 4
+
+    }
+
+  ];
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header title="Joke Book"/>
+      {jokes.map((item)=>(
+      <Joke
+       //get rid of id= is not needed at this time**********
+        key={item.id}
+        prompt={item.prompt}
+        option1={item.option1}
+        option2={item.option2}
+        resp1 = {item.resp1}
+        resp2 = {item.resp2}
+        //get rid of some parameteres here,. and add resp1 and resp2***************************************
+      />)
+      )}
+ 
     </div>
   );
-}
+};
 
 export default App;
