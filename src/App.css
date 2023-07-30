@@ -49,12 +49,14 @@
 .site-contents{
   font-weight: 600;
   font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 3px;
 }
 
 .btn-subtitle{
   font-size: 20px;
   font-weight: 600;
   font-family: 'Space Grotesk', sans-serif;
+  
 }
 
 .some-margin{
@@ -88,6 +90,9 @@ header > h3{
 
 nav{
   margin-left: 25px;
+}
+button{
+  background-color: rgb(238, 232, 232);
 }
 
 button:active{
