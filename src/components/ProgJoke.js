@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Joke = (props) => {
+const ProgJoke = (props) => {
   //use state 
     const [showPrompt, setShowPrompt] = useState(true);//set to a bool true, to default buttons showing************
     const [showWhichResp, setShowWhichResp] = useState(0);//to 0, set to 1 or 2 based on the response
@@ -27,10 +27,9 @@ const Joke = (props) => {
         }
     
       };//end handleOnClick
-//added the updated in className here in Joke.js*****************************************
-//*********************************************************************** */
+// make sure to update the className to prog
   return (
-    <div className={"gen-joke joke" + props.id}>
+    <div className={"gen-joke prog" + props.id}>
 
         {showPrompt &&  
         ( 
@@ -60,6 +59,6 @@ const Joke = (props) => {
 
   </div>
   );
-};//end Joke
+};//end ProgJoke
 
-export default Joke;
+export default ProgJoke;

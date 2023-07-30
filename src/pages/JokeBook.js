@@ -59,7 +59,8 @@ function JokeBook() {
       <Header title="Joke Book"/>
       {jokes.map((item)=>(
       <Joke
-       //get rid of id= is not needed at this time**********
+       //added back in the id={item.id} here as we need it**************************
+       //********************************************************************** */
         id={item.id}
         key={item.id}
         prompt={item.prompt}
@@ -67,12 +68,11 @@ function JokeBook() {
         option2={item.option2}
         resp1 = {item.resp1}
         resp2 = {item.resp2}
-        //get rid of some parameteres here,. and add resp1 and resp2***************************************
       />)
       )}
  
     </div>
   );
-};//end App
+};//end JokeBook
 
 export default JokeBook;

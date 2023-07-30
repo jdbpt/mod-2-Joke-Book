@@ -1,5 +1,6 @@
 .App {
   margin: auto;
+  font-size: large;
 }
 
 .gen-joke{
@@ -22,9 +23,31 @@
   margin-left: 10px;
 }
 
-ul{
-  list-style-type: none;
+.navigation{
+  font-size: 25px;
+  padding: 10px;
+  margin-inline-end: 5px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
 }
+
+header{
+  
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+header > h1{
+  text-align: center;
+  font-size: 60px;
+  height: 60px;
+  
+}
+
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Joke from '../components/Joke';
+import ProgJoke from '../components/ProgJoke';
 
 function LameJokes() {
 
@@ -58,15 +58,15 @@ function LameJokes() {
     <div>
       <Header title="Joke Book"/>
       {jokes.map((item)=>(
-      <Joke
-       //get rid of id= is not needed at this time**********
+      <ProgJoke
+       //ad in id= it is needed at this time**********
+        id={item.id}
         key={item.id}
         prompt={item.prompt}
         option1={item.option1}
         option2={item.option2}
         resp1 = {item.resp1}
         resp2 = {item.resp2}
-        //get rid of some parameteres here,. and add resp1 and resp2***************************************
       />)
       )}
  
