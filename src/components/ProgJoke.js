@@ -35,7 +35,7 @@ const ProgJoke = (props) => {
         ( 
         <div>
             <h2>{props.prompt}</h2>
-                <button onClick={()=>(handleOnClick('btn1'))}>{props.option1}</button>
+                <button className="btn1" onClick={()=>(handleOnClick('btn1'))}>{props.option1}</button>
                 <button className="btn2" onClick={()=>(handleOnClick('btn2'))}>{props.option2}</button>
                 {/**Made it so that here there is a ()=> to avoid the too many rerenders error */}
             
@@ -46,14 +46,14 @@ const ProgJoke = (props) => {
         {!showPrompt && showWhichResp === 1 && (
           <div>
             <h2>{props.resp1}</h2>
-            <button onClick={()=>(handleOnClick('reset'))}>Reset</button>
+            <button className="reset" onClick={()=>(handleOnClick('reset'))}>Reset</button>
           </div>
         )}
 
         {!showPrompt && showWhichResp === 2 && (
           <div>
              <h2>{props.resp2}</h2>
-             <button onClick={()=>(handleOnClick('reset'))}>Reset</button>
+             <button className="reset" onClick={()=>(handleOnClick('reset'))}>Reset</button>
           </div>
         )}
 

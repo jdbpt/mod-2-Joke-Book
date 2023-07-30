@@ -57,6 +57,8 @@ function LameJokes() {
   return (
     <div>
       <Header title="Joke Book"/>
+      <h3 className='some-margin'>Reveal each programming joke at your own risk...</h3>
+
       {jokes.map((item)=>(
       <ProgJoke
        //ad in id= it is needed at this time**********
@@ -69,7 +71,8 @@ function LameJokes() {
         resp2 = {item.resp2}
       />)
       )}
- 
+      <h3 className='some-margin'>Hey, I warned you.</h3>
+
     </div>
   );
 };//end App
