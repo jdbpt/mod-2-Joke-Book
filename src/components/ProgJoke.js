@@ -27,7 +27,7 @@ const ProgJoke = (props) => {
 
         {showPrompt && (
           <div>
-             <h2>{props.prompt}</h2>
+             <h2 className={"prompt-"+props.id}>{props.prompt}</h2>
              <button className="reset" onClick={()=>(handleOnClick('hide'))}>Hide</button>
           </div>
         )}

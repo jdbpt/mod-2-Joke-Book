@@ -56,10 +56,6 @@
   border: none;
 }
 
-.clicked{
-  background-color: blue;
-}
-
 .site-contents{
   font-weight: 600;
   font-family: 'Space Grotesk', sans-serif;
@@ -73,8 +69,21 @@
 
 }
 
-/* background images for each of the jokes */
+/* colors for each of the jokes */
+.prompt0{
+  color: white;
 
+}
+
+.prompt1{
+  color: hotpink;
+}
+
+/*Lame jokes styles*/
+.prompt-7{
+  color: green;
+
+}
 
 .btn-subtitle{
   font-size: 20px;
