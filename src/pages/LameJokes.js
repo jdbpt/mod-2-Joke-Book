@@ -6,48 +6,43 @@ function LameJokes() {
 
   const jokes = [
     {
-      prompt: "kdjak;fljdkljkfjaskldjfkasjdflkjadslkf;lkazs;lf",
-      option1: "Yes",
-      option2: "No",
-      resp1: "you should see chimneys, they’re through the roof",
-      resp2: "Shocking",
+      prompt: "A software developer decides to dabble in interior design, they maap out the vision and try to build everything out. Except when they are done, they look up and the room is empty.  They misspelled map and they didn’t catch the error.",
       id: 0
     },
 
     {
-      prompt: "kdfklajdklfjadskljflkajdklfja",
-      option1: "Option A",
-      option2: "Option B",
-      resp1: "she kept running away from the ball",
-      resp2: "she wondered why the baseball kept getting bigger…then it hit her",
+      prompt: "A programmer goes up to a server and asks for change equal to ten and the server hands him back a paper written with 1 and 0 with a big smile.  He forgot to say it was strictly equals.",
       id: 1
 
     },
     {
-      prompt: "Which word do you want the German translation of?",
-      option1: "Constipation",
-      option2: "Bra",
-      resp1: "farfrompoopin",
-      resp2: "stopemfromflopin",
+      prompt: "A software engineer and her buddy HTML are having an argument.  She tells him how he should React but instead he just says that he is out of his element and that he will tag a friend.",
       id: 2
 
     },
     {
-      prompt: "Which teacher did the biology teacher chose to go out with?",
-      option1: "Geology",
-      option2: "Physics",
-      resp1: "nope, geology rocks but geography is where it’s at.",
-      resp2: "not him, there was no chemistry",
+      prompt: 'What did the blank page say to its master?  “My style was pushed to the wrong branch, can you git me?”  The master said back, “I think you’re in the wrong hub, you need a new repository.',
       id: 3
 
     },
     {
-      prompt: "Guess who I saw today?",
-      option1: "Option A",
-      option2: "Option B",
-      resp1: "everyone I looked at, don’t like my joke? Too bad, that’s how eye roll",
-      resp2: 'the master and his pupil. What, are my jokes too "cornea" for you?',
+      prompt: 'The husband left his brace at home and screams aloud. “This is a library,”  the wife scolds her husband, “that is no way to React.”',
       id: 4
+
+    },
+    {
+      prompt: "This constant is in no way a function, it should be variable, let it be.",
+      id: 5
+
+    },
+    {
+      prompt: "If we each have a unique identity but are in the same class what are we?  Ready to be styled together and set apart.",
+      id: 6
+
+    },
+    {
+      prompt: "If supercalifragilisticexpialidocious is equal to one, and numGrapes is equal to one, which onoe is more?  They are both equal, but one is misspelled.",
+      id: 7
 
     }
 
@@ -57,18 +52,13 @@ function LameJokes() {
   return (
     <div>
       <Header title="Joke Book"/>
-      <h3 className='some-margin'>Reveal each programming joke at your own risk...</h3>
+      <h3 className='some-margin'>Reveal each Programming Joke at your own risk...</h3>
 
       {jokes.map((item)=>(
       <ProgJoke
-       //ad in id= it is needed at this time**********
         id={item.id}
         key={item.id}
         prompt={item.prompt}
-        option1={item.option1}
-        option2={item.option2}
-        resp1 = {item.resp1}
-        resp2 = {item.resp2}
       />)
       )}
       <h3 className='some-margin'>Hey, I warned you.</h3>

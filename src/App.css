@@ -7,7 +7,7 @@
 .gen-joke{
   border: 5px solid black;
   border-radius: 10px;
-  padding: 10px;
+  /* padding: 10px; */
   margin-bottom: 10px;
   text-align: center;
   width: 80%;
@@ -15,6 +15,8 @@
   margin-right: auto;
   font-size: 25px;
   font-family: 'Space Grotesk', sans-serif;
+  display: flex;
+  justify-content: center;
   /*Placed the link from google fonts in index.html in Public folder*/
 }
 
@@ -26,6 +28,14 @@
   background-color: yellow;
 }
 
+.prog2{
+  background-color: lightsalmon;
+}
+
+.prog4{
+  background-color: burlywood;
+
+}
 .btn2{
   margin-left: 10px;
 }
@@ -46,11 +56,25 @@
   border: none;
 }
 
+.clicked{
+  background-color: blue;
+}
+
 .site-contents{
   font-weight: 600;
   font-family: 'Space Grotesk', sans-serif;
   letter-spacing: 3px;
 }
+
+.generic-img{
+  background-size: contain;
+  background-repeat: repeat-x;
+  height: 100%;
+
+}
+
+/* background images for each of the jokes */
+
 
 .btn-subtitle{
   font-size: 20px;

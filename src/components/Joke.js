@@ -34,25 +34,24 @@ const Joke = (props) => {
 
         {showPrompt &&  
         ( 
-        <div>
+        <div className={"prompt"+props.id+" generic-img"}>
             <h2>{props.prompt}</h2>
                 <button className="btn1" onClick={()=>(handleOnClick('btn1'))}>{props.option1}</button>
                 <button className="btn2" onClick={()=>(handleOnClick('btn2'))}>{props.option2}</button>
                 {/**Made it so that here there is a ()=> to avoid the too many rerenders error */}
-            
         </div>
         )}
 
             {/**if showPrompt is false, then we show the h2 with the props.resp1 or resp2 depending which option choosen */}
         {!showPrompt && showWhichResp === 1 && (
-          <div>
+          <div className={"resp1-"+props.id+" generic-img"}>
             <h2>{props.resp1}</h2>
             <button className='reset' onClick={()=>(handleOnClick('reset'))}>Reset</button>
           </div>
         )}
 
         {!showPrompt && showWhichResp === 2 && (
-          <div>
+          <div className={"resp2-"+props.id}>
              <h2>{props.resp2}</h2>
              <button className='reset' onClick={()=>(handleOnClick('reset'))}>Reset</button>
           </div>
